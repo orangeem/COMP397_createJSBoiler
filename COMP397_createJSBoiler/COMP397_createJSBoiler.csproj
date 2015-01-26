@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -69,6 +70,10 @@
   <ItemGroup>
     <Content Include="css\game.css" />
     <Content Include="index.html" />
+    <Content Include="script\lib\easeljs-0.8.0.min.js" />
+    <Content Include="script\lib\preloadjs-0.6.0.min.js" />
+    <Content Include="script\lib\soundjs-0.6.0.min.js" />
+    <Content Include="script\lib\tweenjs-0.6.0.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -78,9 +83,15 @@
     <Folder Include="assets\audio\" />
     <Folder Include="assets\fonts\" />
     <Folder Include="assets\images\" />
-    <Folder Include="script\lib\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="script\lib\createjs-lib.d.ts" />
+    <TypeScriptCompile Include="script\lib\createjs.d.ts" />
+    <TypeScriptCompile Include="script\lib\easeljs.d.ts" />
+    <TypeScriptCompile Include="script\lib\preloadjs.d.ts" />
+    <TypeScriptCompile Include="script\lib\soundjs.d.ts" />
+    <TypeScriptCompile Include="script\lib\tweenjs.d.ts" />
     <TypeScriptCompile Include="script\game.ts" />
   </ItemGroup>
   <PropertyGroup>
